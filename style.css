@@ -1,0 +1,79 @@
+
+body{
+background-color:black;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+#name{
+	display: inline-flex;
+	color:white;
+	font-size:25px;
+	font-family:sans-serif; /*change font family*/
+}
+#search{
+	display: inline-flex;
+	height: 30px;
+	margin-right: 100px;
+	margin-top: 30px;
+}
+/*#search-txt{
+	border: 1px solid grey;
+	background-color: 
+	box-shadow:;
+} Add later*/
+#search-btn{
+	color: white;
+}
+button{
+	background-color: black;
+	border:none;
+}
+.misc{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 200px;
+}
+#bell{
+	color: white;
+	font-size:25px;
+	margin-top: 10px;
+}/*notifications on hover*/
+#acc{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	/*margin-right: 40px;*/
+	margin-top: 5px;
+}/*account name on hover*/
+.nav{
+	width: 750px;
+	height: 100%;
+	display:flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+#nav-bar a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	margin-top:40px;
+}
+{
+	
+	padding: 0;
+	list-style: none;
+	
+}
+#logo{
+	display:inline-flex;
+	font-size: 60px;
+	color: white;
+	justify-content: flex-start;
+	margin-top: 10px;
+	margin-left: 10px;
+}
