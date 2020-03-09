@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
- <script src="https://kit.fontawesome.com/826cec0cde.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/826cec0cde.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <head>
 	<title>Musify</title>
 </head>
 <body>
+	<!-- Make Units relative and site responsive! -->
 	<div id="header-container" class="header">
 		<div id="logo-cont">
-			<i id="logo" class="fab fa-napster"></i>
+			<a href="index.html"><i id="logo" class="fab fa-napster"></i></a>
 			<p id="name">Musify</p>
 		</div>
 		
 		<div id="nav-bar" class="nav">
-			<a href="#fav" id="nav1">Favourites</a>
-			<a href="#play" id="nav2">Playlists</a>
-			<a href="#top" id="nav3">Top Charts</a>
+			<div class="nav1"><a href="fav.html" id="nav1">Favourites</a></div>
+			<div class="nav1"><a href="play.html" id="nav2">Playlists</a></div>
+			<div class="nav1"><a href="top.html" id="nav3">Top Charts</a></div>
+			
 		</div>
 		<div id="search">
 			<input type="text" id="search-txt"placeholder="Search...">
@@ -26,22 +28,302 @@
 			<button><i id="bell"class="far fa-bell"></i></button>
 			<img src="ed.jpg" id="acc">
 	</div>
-<div id="carousel"></div>
+</div>
+<div class="q">
+	<div class="q_header">
+		<div style="color:white;font-size: 20px;">Queue</div>
+		<div style="color:grey;">Queue <i style="color: grey;font-size: 20px;margin-left:5px;"class="fas fa-caret-down"></i></div>
 	</div>
-	<div id="latest">
-		<!-- <h4>Latest Releases</h4>
-		<div id="song"><img src=""><p>Onism<p><p>4:44</p></div>
-		<div id="song"><img src=""><p>Onism<p><p>4:44</p></div>
-		<div id="song"><img src=""><p>Onism<p><p>4:44</p></div>
-		<div id="song"><img src=""><p>Onism<p><p>4:44</p></div> -->
+		<div class="q_items">
+			<div class="q_items_no">
+				1.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				2.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				3.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				4.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				5.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				6.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				7.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				8.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				9.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+		<div class="q_items">
+			<div class="q_items_no">
+				10.
+			</div>
+			<div class="q_items_info">
+				<!-- Add Shadow -->
+				<img src="ed.jpg" class="q_items_info_pic">
+				<div class="q_items_song">
+					<p class="q_items_song_name">Song</p>
+					<p class="q_items_song_artist"><small>Artist</small></p>
+				</div>
+			</div>
+			<div class="heart">
+				<i style="font-size: 20px;color: grey;"class="far fa-heart"></i>
+			</div>
+		</div>
+</div>
+
+	
+	<!-- Make it into a slider -->
+<div id="albums" >
+	<img id="green" class="alb"src="green.jpg">
+	<img src="imagine.jpg" class="alb">
+	<img src="ed.jpg" class="alb">
+</div>
+<h4 style="color: white;margin-left: 55px;">Latest Release</h4>
+<div class="latest">
+	<div class="row">
+		<div class="song1">
+		<img src="ed.jpg" >
+		<div class="q_items_song">
+			<p class="q_items_song_name">Onism</p>
+			<p class="q_items_song_artist"><small>3 Nov 2019</small></p>
+		</div>
+		</div>
+		<!-- Fix postion -->
+		<div><i class="fas fa-ellipsis-h"></i><p>4:44</p></div>
+	
+		<div class="song1">
+		<img src="ed.jpg">
+		<div class="q_items_song">
+			<p class="q_items_song_name">Onism</p>
+			<p class="q_items_song_artist"><small>3 Nov 2019</small></p>
+		</div>	
+		</div>
+<div><i class="fas fa-ellipsis-h"></i><p>4:44</p></div>
 	</div>
+		<div class="row">
+		<div class="song1">
+		<img src="ed.jpg">
+		<div class="q_items_song">
+			<p class="q_items_song_name">Onism</p>
+			<p class="q_items_song_artist"><small>3 Nov 2019</small></p>
+		</div>
+		</div>
+		<!-- Fix postion -->
+	<div><i class="fas fa-ellipsis-h"></i><p>4:44</p></div>
+		<div class="song1">
+		<img src="ed.jpg">
+		<div class="q_items_song">
+			<p class="q_items_song_name">Onism</p>
+			<p class="q_items_song_artist"><small>3 Nov 2019</small></p>
+		</div>	
+		</div>
+	<div><i class="fas fa-ellipsis-h"></i><p>4:44</p></div>
+	</div>
+</div>
+
+<h4 style="color: white;margin-left: 55px;">Popular Artists</h4>
 	<div id="art">
-		<!-- <img src=""><p>Ed Sheeran</p>
-		<img src=""><p>ColdPlay</p>
-		<img src=""><p>Zayn</p>
-		<img src=""><p>Charlie Puth</p>
-		<img src=""><p>Imagine Dragons</p>
-		<img src=""><p>Bruno Mars</p> -->
+		<a href="green.html"><img src="green.jpg"></a>
+		<a href="cold.html"><img src="cold.jpg"></a>
+		<a href="zayn.html"><img src="zayn.jpg"></a>
+		<a href="charlie.html"><img src="charlie.jpg"></a>
+		<a href="imagine.html"><img src="imagine.jpg"></a>
+	</div>
+
+	<div class="art-name">
+		<p>Green Day</p>
+		<p>ColdPlay</p>
+		<p>Zayn</p>
+		<p>Charlie Puth</p>
+		<p>Imagine Dragons</p>
+	</div>
+	<h4 style="color:white;margin-left: 55px">Top Songs</h4>
+<div id="stat">
+		<img src="ed.jpg">
+		<img src="cold.jpg">
+		<img src="zayn.jpg">
+		<img src="charlie.jpg">
+		<img src="imagine.jpg">
+	</div>
+	<h4 style="color:white;margin-left: 55px">Recommended For You</h4>
+	<div id="play">
+
+		<img src="zayn.jpg">
+		<img src="charlie.jpg">
+		<img src="imagine.jpg">
+	</div>
+	<h4 style="color:white;margin-left: 55px">Latest English</h4>
+	<div id="eng" class="lat">	
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+	</div>
+	<div class="song-name">
+	</div>
+	<h4 style="color:white;margin-left: 55px">Latest Hindi</h4>
+	<div id="eng" class="lat">	
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
+			<div class="song-name1">
+				<img src="ed.jpg">
+				<p>Onism</p>
+			</div>
 	</div>
 </body>
-</html>
+</html> 

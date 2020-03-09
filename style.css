@@ -1,6 +1,7 @@
 
 body{
-background-color:black;
+background-color:#1A1A1D;
+font-family: arial;
 }
 .header{
 	width: 100%;
@@ -10,7 +11,7 @@ background-color:black;
 }
 #name{
 	display: inline-flex;
-	color:white;
+	color:#DEF2F1;
 	font-size:25px;
 	font-family:sans-serif; /*change font family*/
 }
@@ -20,16 +21,11 @@ background-color:black;
 	margin-right: 100px;
 	margin-top: 30px;
 }
-/*#search-txt{
-	border: 1px solid grey;
-	background-color: 
-	box-shadow:;
-} Add later*/
 #search-btn{
-	color: white;
+	color: #DEF2F1;
 }
 button{
-	background-color: black;
+	background-color: #1A1A1D;
 	border:none;
 }
 .misc{
@@ -39,41 +35,212 @@ button{
 	width: 200px;
 }
 #bell{
-	color: white;
+	color: #DEF2F1;
 	font-size:25px;
 	margin-top: 10px;
-}/*notifications on hover*/
+}
 #acc{
 	height: 80px;
 	width: 80px;
 	border-radius: 50%;
-	/*margin-right: 40px;*/
+
 	margin-top: 5px;
-}/*account name on hover*/
+}
 .nav{
 	width: 750px;
 	height: 100%;
 	display:flex;
 	margin: 0 auto;
 	justify-content: space-between;
+	align-items: center;
+}
+.nav1:hover{
+	transform: scale(1.1);
 }
 #nav-bar a{
 	text-decoration: none;
-	color: white;
+	color: #DEF2F1;
 	font-size: 18px;
 	margin-top:40px;
 }
-{
-	
-	padding: 0;
-	list-style: none;
-	
-}
+
 #logo{
 	display:inline-flex;
 	font-size: 60px;
-	color: white;
+	color: #DEF2F1;
 	justify-content: flex-start;
 	margin-top: 10px;
 	margin-left: 10px;
+}
+#albums{
+	width: 75%;
+	margin:30px 25px 25px 40px;
+}
+#albums img{
+	height: 300px;
+	width: 360px;
+	display:inline-flex;
+	justify-content:space-between;
+	margin-left: 20px;
+}
+#albums img:hover{
+	transition: 0.5s ease;
+	transform: scale(1.1);
+}
+#art{
+	width: 60%;
+	height: 150px;
+	display:inline-flex;
+	margin-left: 40px;
+}
+#art img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-left: 40px;
+}
+
+.art-name{
+	color: #DEF2F1;
+	width: 45%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-left: 120px;
+}
+#stat{
+	background-color:grey;
+	width: 50%;
+	height:150px;
+	display:flex;
+	justify-content: space-between;
+	margin-left: 80px;
+	margin-top:30px; 
+}
+#stat img{
+	height: 100px;
+	width: 100px;
+	margin-top: 25px;
+	margin-left: 15px;
+	margin-right:15px;
+	border-radius: 50%
+}
+#play{
+	width: 50%;
+	margin-left: 80px;
+	margin-top: 25px; 
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+#play img{
+	height: 150px;
+	width: 300px;
+	transition: transform 0.5s ease;
+}
+#play img:hover{
+	transform: scale(1.1);
+}
+
+.lat{
+	width: 55%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 80px;
+}
+.lat img{
+	height: 125px;
+	width: 125px;
+}
+
+.song-name{
+	color: #DEF2F1;
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 80px;
+}
+.song-name1{
+	color: #DEF2F1;
+	width: 125px;
+	text-align: center;
+}
+.q{
+	float: right;
+	width:25%;
+	height: 100vh;
+	color: #DEF2F1;
+}
+.q:hover{
+	overflow-y:scroll;
+	/*scrollbar is invisible in Firefox*/
+	scrollbar-width:none;
+}
+.q_header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 1em;
+}
+.q_items{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;\
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.q_items_info{
+display: flex;
+flex:1 1 auto;
+flex-wrap: wrap;
+}
+.q_items_info_pic{
+	height: 70px;
+	width: 70px;
+	display: block;
+}
+.q_items_no{
+width: max-content;
+padding-right: 1em;
+}
+.q_items_song{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	padding: 0em 1em;
+}
+.q_items_song_name,.q_items_song_artist{
+	width: 100%;
+     height: max-content;
+     margin-bottom: 0;
+     margin-top: 0;
+}
+
+.row{
+display: flex;
+color: #DEF2F1;
+flex-wrap: wrap;
+width: 50%;
+height: 50%;
+margin-left: 55px;
+margin-top: 1em;
+margin-bottom: 1em;
+justify-content: space-between;
+}
+.row img{
+	height: 100px;
+	width: 100px;
+	display: block;
+}
+.song1{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+}
+.song1 img:hover{
+	background-color: #4E4E50;
+}
+.extra{
+	color: grey;
+	font-size: 14px;
 }
